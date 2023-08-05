@@ -40,13 +40,7 @@ ul {
   align-items: center;
   justify-content: space-between;
 }
-.container {
-  display: flex;
-  margin-right: 76px;
-  height: 24px;
-  align-items: center;
-  flex-shrink: 0;
-}
+
 /*аж сюди фігня */
 
 .logo {
@@ -57,6 +51,7 @@ ul {
   line-height: 1.17;
   letter-spacing: 0.54px;
   text-transform: uppercase;
+  display: flex;
 }
 .link {
   text-decoration: none;
@@ -81,14 +76,21 @@ ul {
 
 .list-item-link {
   color: var(--navyblue);
+  display: flex;
+}
+
+.features-title {
+  display: none;
 }
 
 .list {
   list-style: none;
+  display: flex;
+  gap: 8px;
 }
 .filter {
   display: flex;
-  padding: 0 271px;
+  justify-content: center;
   gap: 24px;
   margin-bottom: 48px;
 }
@@ -124,8 +126,9 @@ ul {
 .intro {
   background: var(--navyblue);
   padding: 188px 0;
+  display: flex;
 }
-/*щось сама мутила (СИНІЙ ЕКРАН) */
+
 .intro-title {
   color: var(--white);
   text-align: center;
@@ -166,8 +169,6 @@ ul {
   padding-top: 120px;
   margin-bottom: 48px;
 
-  /* Header 2 */
-
   font-size: 36px;
   line-height: 1.11;
   text-transform: capitalize;
@@ -180,11 +181,7 @@ ul {
 }
 
 .features-set {
-  display: inline-flex;
-  width: 264px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
+  flex: 1;
 }
 
 .card-set {
@@ -193,7 +190,6 @@ ul {
 }
 
 .work-item {
-  margin-right: 24px;
 }
 
 .work-item:last-child {
@@ -211,6 +207,7 @@ ul {
 .section-item-title {
   color: var(--navyblue);
   font-weight: 500;
+  margin-top: 120px;
   margin-bottom: 8px;
 
   /* Header 3 */
@@ -261,4 +258,10 @@ ul {
 .tabs-item:focus {
   color: var(--white);
   background-color: var(--ocean);
+}
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
 }
