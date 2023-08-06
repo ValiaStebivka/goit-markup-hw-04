@@ -39,12 +39,16 @@ ul {
   list-style: none;
 }
 
+img {
+  display: block;
+}
+
 a {
   text-decoration: none;
 }
 
 .header {
-  padding: 24px 0;
+  padding: 24px 0
   border-bottom: 1px solid var(--cornflower);
 }
 
@@ -59,9 +63,11 @@ a {
   gap: 76px;
   align-items: center;
 }
+
 .nav-list {
   display: flex;
   gap: 40px;
+  padding: 24px 0;
 }
 
 .nav-link {
@@ -84,6 +90,7 @@ a {
   letter-spacing: 0.54px;
   text-transform: uppercase;
   display: flex;
+  margin-right: 76px;
 }
 .link {
   text-decoration: none;
@@ -157,7 +164,8 @@ a {
 
 .intro {
   background: var(--navyblue);
-  padding: 188px 0;
+  padding-top: 96px; 
+  padding-bottom: 120px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -300,4 +308,12 @@ a {
   flex-wrap: wrap;
   gap: 24px;
   justify-content: center;
+}
+
+.portfolio-intro{
+  display: none;
+}
+
+.filter{
+   
 }
