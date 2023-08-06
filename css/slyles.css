@@ -212,8 +212,8 @@ a {
   margin-bottom: 72px;
 }
 
-.work-item {
-}
+/*.work-item {
+}*/
 
 .work-item:last-child {
   margin-right: 0;
@@ -234,8 +234,6 @@ a {
   color: var(--navyblue);
   text-align: center;
   letter-spacing: 0.02em;
-  padding-bottom: 72px;
-  padding-top: 120px;
   margin-bottom: 48px;
 
   font-size: 36px;
@@ -322,5 +320,5 @@ a {
   justify-content: center;
 }
 
-.filter {
-}
+/*.filter {
+}*/
