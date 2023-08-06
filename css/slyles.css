@@ -275,6 +275,24 @@ a {
 /* Footer*/
 .footer {
   background-color: var(--navyblue);
+  padding: 100px 0;
+}
+
+.footer-logo {
+  color: var(--iris);
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.17;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+  display: flex;
+  margin-right: 76px;
+  margin-bottom: 16px;
+}
+
+.footer-logo-white {
+  color: var(--cloud);
 }
 
 .footer-text {
