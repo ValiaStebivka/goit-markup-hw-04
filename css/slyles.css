@@ -183,16 +183,6 @@ a {
   padding: 120px 0;
 }
 
-.features-title {
-  position: absolute;
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0;
-  border: 0;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-}
-
 .features-list {
   display: flex;
   gap: 24px;
@@ -322,13 +312,16 @@ a {
   padding-top: 96px;
   padding-bottom: 120px;
 }
-.portfolio-intro {
+.visually-hidden {
   position: absolute;
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0;
-  border: 0;
-  height: 1px;
   width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
