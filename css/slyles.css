@@ -32,7 +32,11 @@ h3,
 h4,
 h5,
 h6,
-p,
+p {
+  margin: 0;
+  padding: 0;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -71,8 +75,15 @@ a {
 
 .header-list-item {
   color: var(--navyblue);
-  display: flex;
+  display: block;
   padding: 24px 0;
+
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.32px;
 }
 
 .header-list-item:hover,
@@ -80,12 +91,10 @@ a {
   color: var(--ocean);
 }
 .header-nav-link {
-  display: block;
 }
 
 .contacts-list {
   display: flex;
-  padding: 24px 0;
   gap: 40px;
 }
 
@@ -97,7 +106,6 @@ a {
   line-height: 1.17;
   letter-spacing: 0.54px;
   text-transform: uppercase;
-  display: flex;
   margin-right: 76px;
 }
 
@@ -135,26 +143,28 @@ a {
 
 .intro {
   background: var(--navyblue);
-  display: flex;
-  flex-direction: column;
+
   text-align: center;
   padding: 188px 0;
 }
 
-.intro .container {
+/*.intro .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+}*/
 
 .intro-title {
   color: var(--white);
   max-width: 496px;
   text-align: center;
   font-size: 56px;
+  font-weight: 700;
   letter-spacing: 1.12px;
   margin-bottom: 48px;
+  font-style: normal;
+  line-height: 60px;
 }
 
 .intro-button {
@@ -189,7 +199,10 @@ a {
 }
 
 .features-item {
-  width: calc((100% - 72px) / 4);
+  color: var(--navyblue);
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.32px;
 }
 
 .features-item:last-child {
@@ -197,9 +210,12 @@ a {
 }
 
 .features-item-title {
-  display: flex;
-  width: calc((100% - 72px) / 4);
   margin-bottom: 8px;
+  color: var(--slate);
+  width: calc((100% - 72px) / 4);
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.4px;
 }
 
 /* Section 3 */
@@ -263,7 +279,7 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   font-size: 16px;
-  color: var(--sate);
+  color: var(--slate);
   text-align: center;
 }
 
@@ -288,7 +304,6 @@ a {
   letter-spacing: 0.54px;
   text-transform: uppercase;
   display: inline-block;
-  margin-right: 76px;
   margin-bottom: 16px;
 }
 
@@ -308,7 +323,7 @@ a {
 /* Portfolio  */
 
 /* Section 1 portfolio*/
-.portfolio-content {
+.portfolio-contentainer {
   padding-top: 96px;
   padding-bottom: 120px;
 }
