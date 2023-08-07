@@ -211,6 +211,11 @@ a {
 .work {
   padding-bottom: 120px;
 }
+.work-list {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
 
 .work-title {
   color: var(--navyblue);
@@ -270,7 +275,7 @@ a {
 .list {
   list-style: none;
   display: flex;
-  gap: 8px;
+  gap: 24px;
 }
 
 /* Footer*/
