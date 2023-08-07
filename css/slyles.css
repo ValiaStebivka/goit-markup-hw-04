@@ -90,8 +90,8 @@ a {
 .header-list-item:focus {
   color: var(--ocean);
 }
-.header-nav-link {
-}
+/*.header-nav-link {
+}*/
 
 .contacts-list {
   display: flex;
@@ -196,11 +196,11 @@ a {
 
 .features-list {
   display: flex;
+  width: calc((100% - 72px) / 4);
   gap: 24px;
 }
 
 .features-item {
-width: calc((100% - 72px) / 4)
   color: var(--navyblue);
   font-weight: 400;
   line-height: 24px;
