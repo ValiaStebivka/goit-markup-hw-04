@@ -24,6 +24,7 @@ body {
   padding: 0 15px;
   margin: 0 auto;
   width: 1158px;
+  overflow: hidden;
 }
 
 h1,
@@ -141,18 +142,17 @@ a {
   padding: 188px 0;
 }
 
-.intro-content {
+.intro .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.intro .container {
+.intro-title {
   color: var(--white);
-  text-align: center;
   max-width: 496px;
-  width: 100%;
+  text-align: center;
   font-size: 56px;
   letter-spacing: 1.12px;
   margin-bottom: 48px;
@@ -162,7 +162,7 @@ a {
   background: var(--iris);
   font-family: "Roboto", sans-serif;
   color: var(--white);
-  display: inline-block;
+  display: block;
   min-width: 169px;
   height: 56px;
   border: none;
@@ -190,14 +190,21 @@ a {
 
 .features-list {
   display: flex;
-  width: calc((100% - 72px) / 4);
+  gap: 24px;
 }
+
 .features-item {
-  margin-right: 24px;
   width: calc((100% - 72px) / 4);
 }
+
 .features-item:last-child {
   margin-right: 0;
+}
+
+.features-item-title {
+  display: flex;
+  width: calc((100% - 72px) / 4);
+  margin-bottom: 8px;
 }
 
 /* Section 3 */
@@ -206,11 +213,14 @@ a {
 }
 
 .work-title {
+  color: var(--navyblue);
+  text-align: center;
+  letter-spacing: 0.02em;
   margin-bottom: 72px;
+  font-size: 36px;
+  line-height: 1.11;
+  text-transform: capitalize;
 }
-
-/*.work-item {
-}*/
 
 .work-item:last-child {
   margin-right: 0;
@@ -234,7 +244,6 @@ a {
   color: var(--navyblue);
   text-align: center;
   letter-spacing: 0.02em;
-  margin-bottom: 48px;
   margin-bottom: 72px;
   font-size: 36px;
   line-height: 1.11;
@@ -262,11 +271,6 @@ a {
   list-style: none;
   display: flex;
   gap: 8px;
-}
-
-.card-set {
-  display: flex;
-  gap: 24px;
 }
 
 /* Footer*/
