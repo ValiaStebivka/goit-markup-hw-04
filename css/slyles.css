@@ -64,7 +64,6 @@ a {
 
 .header-nav {
   display: flex;
-  gap: 76px;
   align-items: center;
 }
 
@@ -202,10 +201,6 @@ a {
 
 .features-item {
   width: calc((100% - 72px) / 4);
-  color: var(--navyblue);
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.32px;
 }
 
 .features-item:last-child {
@@ -216,8 +211,15 @@ a {
   margin-bottom: 8px;
   color: var(--slate);
   font-weight: 500;
-  line-height: 24px;
+  line-height: 0.12px;
   letter-spacing: 0.4px;
+}
+
+.features-item-info {
+  color: var(--navyblue);
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.32px;
 }
 
 /* Section 3 */
@@ -358,8 +360,6 @@ a {
   padding: 12px 24px;
   border-radius: 4px;
   border: 1px solid var(--cornflower);
-  justify-content: center;
-  align-items: center;
 
   /* Button Text */
   font-weight: 500;
@@ -390,5 +390,20 @@ a {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
+}
+
+.portfolio-section-item-title {
+  color: var(--navyblue);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.4px;
   margin-bottom: 8px;
+}
+
+.portfolio-section-item-info {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  font-size: 16px;
+  color: var(--slate);
 }
