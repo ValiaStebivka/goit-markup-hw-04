@@ -195,7 +195,6 @@ a {
 
 .features-list {
   display: flex;
-
   gap: 24px;
 }
 
@@ -208,18 +207,20 @@ a {
 }
 
 .features-item-title {
-  margin-bottom: 8px;
-  color: var(--slate);
+  color: var(--navyblue);
+  font-size: 20px;
   font-weight: 500;
-  line-height: 0.12px;
-  letter-spacing: 0.4px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .features-item-info {
-  color: var(--navyblue);
+  color: var(--slate);
+  font-size: 16px;
   font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.32px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 /* Section 3 */
