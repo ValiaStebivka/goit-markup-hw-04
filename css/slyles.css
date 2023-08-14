@@ -449,11 +449,11 @@ a {
   padding: 100px 0;
 }
 
-/*.footer-container {
+.footer-container {
   display: flex;
   align-items: baseline;
   margin-right: 120px;
-}*/
+}
 
 .footer-logo {
   color: var(--iris);
