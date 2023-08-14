@@ -144,14 +144,18 @@ a {
   background: var(--navyblue);
   text-align: center;
   padding: 188px 0;
+  margin: 0 auto;
+  max-width: 1440px;
+  background-color: var(--navyblue);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
-
-/*.intro .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}*/
 
 .intro-title {
   color: var(--white);
@@ -171,7 +175,7 @@ a {
   font-family: "Roboto", sans-serif;
   color: var(--white);
   display: block;
-  margin: auto;
+  margin: 0 auto;
   min-width: 169px;
   height: 56px;
   border: none;
@@ -324,6 +328,7 @@ a {
   letter-spacing: 0.32px;
   width: 264px;
 }
+/*Modal Window*/
 
 /* Portfolio  */
 
