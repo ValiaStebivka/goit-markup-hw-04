@@ -94,6 +94,7 @@ a {
 
 .header-nav-list .current {
   color: var(--ocean);
+  position: relative; /*тут невпевнена*/
 }
 
 .current::after {
@@ -156,6 +157,7 @@ a {
   letter-spacing: 0.54px;
   text-transform: uppercase;
   margin-right: 76px;
+  position: relative;
 }
 
 .logo-blue {
@@ -181,6 +183,7 @@ a {
   color: var(--slate);
   line-height: 1.5;
   letter-spacing: 0.32px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-link:hover,
@@ -417,10 +420,10 @@ a {
 }
 
 .customer-logo-item {
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   width: calc((100% - 120px) / 6);
   height: 88px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customer-item-link {
@@ -432,6 +435,8 @@ a {
   align-items: center;
   justify-content: center;
   color: var(--light-slate);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customer-item-link:hover,
@@ -446,7 +451,8 @@ a {
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.customer-item-icon-logo {
+.customer-logo-item {
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: var(--cloud);
 }
 
@@ -670,21 +676,22 @@ a {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-icon:hover,
-.portfolio-icon:focus {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  transform: translateY(0%);
-}
-
 .portfolio-icon-overlay {
   position: relative;
   overflow: hidden;
 }
-.portfolio-icon-overlay:hover .portfolio-icon-text-overlay,
-.portfolio-icon-overlay:focus .portfolio-icon-text-overlay {
+
+.portfolio-icon:hover,
+.portfolio-icon:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-icon:hover .portfolio-icon-text-overlay,
+.portfolio-icon:focus .portfolio-icon-text-overlay {
   transform: translateY(0%);
 }
+
 .portfolio-icon-text-overlay {
   position: absolute;
   top: 0;
